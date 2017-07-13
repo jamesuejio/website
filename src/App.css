@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.App {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+.flexicution {
+  display: flex;
+}
+
+.header-james {
+  width: 20%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 25px;
+}
+.left {
+  background-color: #222;
+  height: 100vh;
+  width: 50%;
+  overflow: auto;
+
+}
+
+.left-body {
+  /*margin-top: 50px;*/
+}
+
+.right {
+  background-color: #fff;
+  height: 100vh;
+  width: 50%;
+  overflow: auto;
+}
+
+.header-align {
+  /*margin: 0 auto;*/
+  font-size: 24px;
+  padding: 10px;
+}
+
+.header-padding {
+  height: 50px;
+}
+
+.header-topic {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.header-container {
+  background-color: #fff;
+  height: 50px;
+  width: 50%;
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+  position: fixed;
+}
+
+.header-flex {
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*justify-content: space-between;*/
+}
+
+.header-items {
+  padding: 10px 10px 0 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+}
