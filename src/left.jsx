@@ -6,9 +6,10 @@ import Header from './header';
 
 const Left = React.createClass({
   render() {
+    const {width} = this.props;
     return (
-      <div className="left">
-        <Header color={"#222"}>
+      <div className="left" style={{width: width}}>
+        <Header color={"#005b96"}>
           <div className="header-items header-left" onClick={()=>this.scrollToDiv('intro')}>Intro</div>
           <div className="header-items header-left" onClick={()=>this.scrollToDiv('TA')}>TA</div>
           <div className="header-items header-left" onClick={()=>this.scrollToDiv('projects')}>Projects</div>
@@ -18,7 +19,7 @@ const Left = React.createClass({
         <div className="header-padding" />
         <div className="left-body">
           <div className="header-align" ref="intro">... and I am a computer scientist.</div>
-          <img src="/headpict.jpg" width='50%' height='50%'></img>
+          <img src="/headpict.jpg" width='400px' height='400px'></img>
           <p>
             My CS life truly began junior year of high school. I taught myself Java to skip to
             AP Computer Science, and there I knew I wanted to be a computer scientist. I loved having the power

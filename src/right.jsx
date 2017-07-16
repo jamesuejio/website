@@ -6,9 +6,10 @@ import Header from './header';
 
 const Right = React.createClass({
   render() {
+    const {width} = this.props;
     return (
-      <div className="right">
-        <Header color={"#fff"}>
+      <div className="right" style={{width: width}}>
+        <Header color={"#fff"} width={width}>
           <div className="header-items header-right" onClick={()=>this.scrollToDiv('intro')}>Intro</div>
           <div className="header-items header-right" onClick={()=>this.scrollToDiv('djuejio')}>DJ Uejio</div>
           <div className="header-items header-right" onClick={()=>this.scrollToDiv('jazz')}>Jazz</div>
@@ -17,7 +18,7 @@ const Right = React.createClass({
         <div className="header-padding" />
         <div className="right-body">
           <div className="header-align" ref="intro">... and I am a musician.</div>
-          <img id="music" src="/musicman.jpg" width='50%' height='50%'></img>
+          <img id="music" src="/musicman.jpg" width='400px' height='400px'></img>
           <p>
             Music has been a huge part of my life since I was young. I learned piano but quickly switched to guitar.
             In middle school I formed a rock band and performed at places like The Fillmore and Bimbo's Cafe.
