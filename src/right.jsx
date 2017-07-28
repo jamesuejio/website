@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { Navbar, NavItem, Nav } from 'react-bootstrap';
 import './App.css';
 import Header from './header';
 
@@ -18,13 +17,13 @@ const Right = React.createClass({
         <div className="header-padding" />
         <div className="right-body">
           <div className="header-align" ref="intro">... and I am a musician.</div>
-          <img id="music" src="/musicman.jpg" width='400px' height='400px'></img>
-          <p>
+          <img id="music" src="/musicman.jpg" width='200px' height='200px' alt=""></img>
+          <p className="intro-paragraph">
             Music has been a huge part of my life since I was young. I learned piano but quickly switched to guitar.
             In middle school I formed a rock band and performed at places like The Fillmore and Bimbo's Cafe.
             But alas I craved complexity and switched to jazz. In high school I joined the school's jazz band.
           </p>
-          <p>
+          <p className="intro-paragraph">
             I decided to further my music education and attended the University of Berkeley
             as a Music minor. I joined UC Jazz, and am currently a part of one of the intermediate jazz combos.
             Outside of classes, I write and play a variety of music, from

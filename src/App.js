@@ -12,22 +12,15 @@ const App = React.createClass({
     }
   },
   render() {
-    const headerJames = "Hi I'm ";
+    const headerJames = "Hi I'm James Uejio";
     return (
       <div>
         <div className="App">
           <CircleSlider moveLeft={this.moveLeft} moveRight={this.moveRight} />
           <div className="flexicution">
+            <div className="header-james">{headerJames}</div>
             <Left width={this.state.leftWidth} />
             <Right width={this.state.rightWidth}/>
-            <div className="header-james">
-              <span style={{color:"white"}}>
-                {headerJames}
-              </span>
-              <span style={{color:"#005b96"}}>
-                James
-              </span>
-            </div>
           </div>
         </div>
       </div>

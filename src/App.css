@@ -5,9 +5,22 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-p {
-  padding: 0 10px;
-  font-size: 18px;
+.Appdown {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.intro-paragraph {
+  font-size: 14px;
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .circle-slider {
@@ -35,7 +48,10 @@ p {
   right: 0;
   margin: 0 auto;
   padding-top: 20px;
-  font-size: 25px;
+  font-size: 18px;
+  color: #000;
+  z-index: 30;
+  font-weight: bold;
 }
 
 .left {
@@ -45,6 +61,10 @@ p {
   width: 50%;
   overflow: auto;
   position: fixed;
+}
+
+.project-tile {
+
 }
 
 .left-body {
@@ -63,12 +83,12 @@ p {
 
 .header-align {
   /*margin: 0 auto;*/
-  font-size: 24px;
+  font-size: 18px;
   padding: 10px;
 }
 
 .header-padding {
-  height: 50px;
+  height: 40px;
   width: 50%;
 }
 
@@ -78,11 +98,8 @@ p {
 }
 
 .header-container {
-  height: 50px;
+  height: 40px;
   width: 50%;
-  -moz-box-shadow: 0 0 3px #ccc;
-  -webkit-box-shadow: 0 0 3px #ccc;
-  box-shadow: 0 0 3px #ccc;
   position: fixed;
 }
 
@@ -97,7 +114,7 @@ p {
 .header-items {
   padding: 10px 10px 0 10px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .header-left {

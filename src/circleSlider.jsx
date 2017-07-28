@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import $ from 'jquery';
 import './App.css';
 
 const CircleSlider = React.createClass({
@@ -20,16 +18,23 @@ const CircleSlider = React.createClass({
     div.style.left = e.clientX - 20 + 'px';
     if (e.clientX > (window.innerWidth / 2)) {
       document.getElementsByClassName('left')[0].style.zIndex = 2;
+      document.getElementsByClassName('right')[0].style.zIndex = 1;
       this.props.moveLeft(e.clientX + 'px');
     } else {
       document.getElementsByClassName('right')[0].style.zIndex = 2;
+      document.getElementsByClassName('left')[0].style.zIndex = 1;
       this.props.moveRight((window.innerWidth - e.clientX) + 'px');
     }
   },
   mouseUp() {
+    const appDown = document.getElementsByClassName('Appdown')[0];
+    if (appDown !== undefined) {
+      appDown.className = "App";
+    }
     window.removeEventListener('mousemove', this.divMove, true);
   },
   mouseDown(e){
+    document.getElementsByClassName('App')[0].className = "Appdown";
     window.addEventListener('mousemove', this.divMove, true);
   },
 });
