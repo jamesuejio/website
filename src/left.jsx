@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 // import { Navbar, NavItem, Nav } from 'react-bootstrap';
 import './App.css';
 import Header from './header';
+import ProjectTile from './projectTile'
 
 const Left = React.createClass({
   render() {
@@ -39,7 +40,63 @@ const Left = React.createClass({
           </p>
           <div className="header-topic" ref="projects">Projects</div>
           <p className="intro-paragraph">All code located on <a href="https://github.com/jalagar">Github repo</a></p>
-
+          <div className="all-projects">
+            <ProjectTile
+              image='/headpict.jpg'
+              link='http://jamesuejio.com/'
+              header='This website!'
+              description='This is my website :)'
+              technologies='HTML, CSS, React'
+            />
+            <ProjectTile
+              image='/calendar.png'
+              link='https://github.com/MaxFangX/calendar-analytics'
+              header='Calendar Analytics'
+              description="Calendar Analytics takes your calendar and shows you what you've done over the years.
+              The most sophisticated way to analyze your time."
+              technologies='Angular, Django, HTML, CSS, Bower'
+            />
+            <ProjectTile
+              image='/introspection.png'
+              link='https://www.youtube.com/watch?v=66v9s0JetyQ'
+              header='Introspection'
+              description="Webapp to help quantify and track mental health. Users type in a
+              diary entry and visualize the corresponding emotions."
+              technologies='D3, Flask, JQuery, HTML, CSS'
+            />
+            <ProjectTile
+              image='/music.jpg'
+              link='http://jamesuejio.com/'
+            />
+            <ProjectTile
+              image='/headpict.jpg'
+              link='http://jamesuejio.com/'
+          />
+          </div>
+          <div className="header-topic" ref="contact">Contact</div>
+          <p className="intro-paragraph">
+            James Uejio
+          </p>
+          <p className="intro-paragraph">
+            Software Engineer, Full Stack Developer, Teacher
+          </p>
+          <p className="intro-paragraph">
+            jamesuejio@berkeley.edu
+          </p>
+          <a
+            className="intro-paragraph"
+            href="https://www.linkedin.com/in/james-uejio-479383a1"
+            target="_blank"
+          >
+            <img src="/linkedin.png" />
+          </a>
+          <a
+            className="intro-paragraph"
+            href="https://github.com/jalagar"
+            target="_blank"
+          >
+            <img src="/github.png" />
+          </a>
 
         </div>
       </div>
