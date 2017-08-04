@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.css';
-import Header from './header';
+import './rightBody.css';
+import '../App.css';
+import Header from '../header';
+import Jazz from './jazz';
 
-const Right = React.createClass({
+const RightBody = React.createClass({
   render() {
     const {width} = this.props;
     return (
@@ -15,7 +17,7 @@ const Right = React.createClass({
           <div className="header-items header-right" onClick={()=>this.scrollToDiv('contact')}>Contact</div>
         </Header>
         <div className="header-padding" />
-        <div className="right-body">
+        <div>
           <div className="header-align" ref="intro">... and I am a musician.</div>
           <img id="music" src="/musicman.jpg" width='200px' height='200px' alt=""></img>
           <p className="intro-paragraph">
@@ -34,8 +36,9 @@ const Right = React.createClass({
           for lyrics and backstories and check out <span onClick={()=>this.scrollToDiv('jazz')}>Jazz </span>
         for some jazz recordings.
           </p>
-          <div className="header-topic" ref="djuejio">DJ Uejio</div>
           <div className="header-topic" ref="jazz">Jazz</div>
+          <Jazz />
+          <div className="header-topic" ref="djuejio">DJ Uejio</div>
           <div className="header-topic" ref="contact">Contact</div>
         </div>
       </div>
@@ -50,4 +53,4 @@ const Right = React.createClass({
   }
 });
 
-export default Right;
+export default RightBody;

@@ -1,0 +1,75 @@
+.left {
+  background-color: #005b96;
+  color: #fff;
+  height: 100vh;
+  width: 50%;
+  overflow: auto;
+  position: fixed;
+}
+.all-projects {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project-container {
+  width: 200px;
+  height: 200px;
+  padding: 10px 50px;
+  margin: 0 auto;
+  z-index: 200;
+}
+
+.project-tile {
+  /*width: 200px;
+  height: 200px;*/
+  /*position:*/
+  position: relative;
+}
+.project-text {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  width: 180px;
+  text-align: left;
+  padding: 10px;
+  font-family: 'Ubuntu';
+  text-decoration: none;
+  color: #fff;
+}
+
+.project-header {
+  font-size: 16px;
+}
+
+.project-description {
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.project-technologies {
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.project-container:hover .project-text{
+  display: block;
+}
+
+.project-container:hover .project-image{
+  opacity: 0.2;
+}
+
+.project-image {
+  height: 100%;
+  width: 100%;
+  float: none;
+  z-index: 50;
+}
+
+.project-image:hover{
+  opacity: 0.2;
+}
+
+.left-body {
+  /*margin-top: 50px;*/
+}

@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { Navbar, NavItem, Nav } from 'react-bootstrap';
-import './App.css';
-import Header from './header';
+import './leftBody.css';
+import '../App.css';
+import Header from '../header';
 import ProjectTile from './projectTile'
 
-const Left = React.createClass({
+const LeftBody = React.createClass({
   render() {
     const {width} = this.props;
     return (
       <div className="left" style={{width: width}}>
-        <Header color={"#005b96"}>
+        <Header color={"#005b96"} width={width}>
           <div className="header-items header-left" onClick={()=>this.scrollToDiv('intro')}>Intro</div>
-          <div className="header-items header-left" onClick={()=>this.scrollToDiv('TA')}>TA</div>
           <div className="header-items header-left" onClick={()=>this.scrollToDiv('projects')}>Projects</div>
+          <div className="header-items header-left" onClick={()=>this.scrollToDiv('TA')}>TA</div>
           <div className="header-items header-left">Resume</div>
           <div className="header-items header-left" onClick={()=>this.scrollToDiv('contact')}>Contact</div>
         </Header>
@@ -34,11 +34,6 @@ const Left = React.createClass({
           </a> and learned so much about industry and more about programming. This summer I am interning at <a target="_blank" rel="noopener noreferrer"
              href="https://liveramp.com/">LiveRamp</a> as
              a full stack intern, and have fallen in love with web development.
-          </p>
-          <div className="header-topic" ref="TA">TA</div>
-          <p className="intro-paragraph">Click on a specific discussion/lab for a brief summary and notes! Also check out
-            the <a href="https://www.youtube.com/channel/UCuteugW6eO65Awk83I6ehoA/featured">CS 61A Youtube channel</a> which
-            has tons of walkthrough videos. TAs and I spent many hours making the videos, so hope they help!
           </p>
           <div className="header-topic" ref="projects">Projects</div>
           <p className="intro-paragraph">All code located on <a href="https://github.com/jalagar">Github repo</a></p>
@@ -81,8 +76,13 @@ const Left = React.createClass({
               description="Hackathon project to help underground musicians find other musicians to collaborate with and find
               a local fan base. Can upload audio and a marker will drop on their geolocation."
               technologies='HTML, CSS, JS, Google Maps API'
-          />
+            />
           </div>
+          <div className="header-topic" ref="TA">TA</div>
+          <p className="intro-paragraph">Click on a specific discussion/lab for a brief summary and notes! Also check out
+            the <a href="https://www.youtube.com/channel/UCuteugW6eO65Awk83I6ehoA/featured">CS 61A Youtube channel</a> which
+            has tons of walkthrough videos. TAs and I spent many hours making the videos, so hope they help!
+          </p>
           <div className="header-topic" ref="contact">Contact</div>
           <p className="intro-paragraph">
             James Uejio
@@ -121,4 +121,4 @@ const Left = React.createClass({
   }
 });
 
-export default Left;
+export default LeftBody;

@@ -1,6 +1,6 @@
 import React from 'react';
-import Right from './right';
-import Left from './left';
+import RightBody from './rightContainer/rightBody';
+import LeftBody from './leftContainer/leftBody';
 import CircleSlider from './circleSlider'
 import './App.css';
 
@@ -19,8 +19,8 @@ const App = React.createClass({
           <CircleSlider moveLeft={this.moveLeft} moveRight={this.moveRight} />
           <div className="flexicution">
             <div className="header-james">{headerJames}</div>
-            <Left width={this.state.leftWidth} />
-            <Right width={this.state.rightWidth}/>
+            <LeftBody width={this.state.leftWidth} />
+            <RightBody width={this.state.rightWidth}/>
           </div>
         </div>
       </div>

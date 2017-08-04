@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './leftBody.css';
 
 const ProjectTile = React.createClass({
   render() {

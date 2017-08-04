@@ -15,7 +15,7 @@ const CircleSlider = React.createClass({
   },
   divMove(e) {
     var div = document.getElementById('slider');
-    div.style.left = e.clientX - 20 + 'px';
+    div.style.left = e.clientX - 23 + 'px';
     if (e.clientX > (window.innerWidth / 2)) {
       document.getElementsByClassName('left')[0].style.zIndex = 2;
       document.getElementsByClassName('right')[0].style.zIndex = 1;
