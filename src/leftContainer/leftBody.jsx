@@ -40,7 +40,7 @@ const LeftBody = React.createClass({
           <div className="all-projects">
             <ProjectTile
               image='/headpict.jpg'
-              link='http://jamesuejio.com/'
+              link='https://github.com/jalagar/jalagar.github.io'
               header='This website!'
               description='This is my website :)'
               technologies='HTML, CSS, ReactJS'

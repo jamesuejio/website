@@ -5,13 +5,58 @@ const Jazz = React.createClass({
   render() {
     return (
       <div className="jazz-container">
-        <img src='nathanjames.jpg' alt='' />
-        <div>
-          <h4>All The Things You Are</h4>
-          <audio controls>
-            <source src="all.m4a">
-            Your browser does not support the audio tag.
-          </audio>
+        <div className="top-container">
+          <img className="jazz-pict" src='nathanjames.jpg' alt='' width="350px" height="auto" />
+          <div className="jazz-description">
+            <div className="header">Nathan Le and I have been playing music together for about a semester.
+              Here are some recordings!</div>
+            <div className="audio-title">All The Things You Are</div>
+            <audio controls>
+              <source src="all.m4a" />
+              Your browser does not support the audio tag.
+            </audio>
+            <div className="audio-title">Alice In Wonderland/Someday My Prince Will Come Medley</div>
+            <audio controls>
+              <source src="alice.m4a" />
+              Your browser does not support the audio tag.
+            </audio>
+            <div className="audio-title">Strasbourg St. Denis</div>
+            <audio controls>
+              <source src="stras.m4a" />
+              Your browser does not support the audio tag.
+            </audio>
+            <div className="audio-title">East Of The Sun</div>
+            <audio controls>
+              <source src="east.m4a" />
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+        <div className="bottom-container">
+          <div className="jazz-description">
+            <div className="header">Here are some recordings of my jazz combo, Village Vanguard!</div>
+            <div className="audio-title">Oleo</div>
+            <audio controls>
+              <source src="oleo.wav" />
+              Your browser does not support the audio tag.
+            </audio>
+            <div className="audio-title">Black Narcissus</div>
+            <audio controls>
+              <source src="black.wav" />
+              Your browser does not support the audio tag.
+            </audio>
+            <div className="audio-title">Song For Bilbao</div>
+            <audio controls>
+              <source src="bilbao.wav" />
+              Your browser does not support the audio tag.
+            </audio>
+            <div className="audio-title">Friday Night At The Cadillac Club</div>
+            <audio controls>
+              <source src="friday.wav" />
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+          <img className="jazz-pict" src='band.jpg' alt='' width="350px" height="auto" />
         </div>
       </div>
     );

@@ -1,5 +1,36 @@
 .jazz-container {
+
+}
+
+.top-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 50px;
+}
+
+.bottom-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 50px;
+}
+
+.jazz-pict {
   margin: 0 auto;
+}
+
+.jazz-description {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.audio-title {
+  font-size: 14px;
+  padding: 10px;
 }

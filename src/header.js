@@ -6,7 +6,7 @@ class Header extends Component {
     const {width} = this.props;
     return (
       <div className="header-container" style={{backgroundColor: this.props.color, width: width}}>
-        <div className="header-flex">
+        <div>
           {this.props.children}
         </div>
       </div>

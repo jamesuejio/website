@@ -11,10 +11,10 @@ const RightBody = React.createClass({
     return (
       <div className="right" style={{width: width}}>
         <Header color={"#fff"} width={width}>
-          <div className="header-items header-right" onClick={()=>this.scrollToDiv('intro')}>Intro</div>
+          <div className="header-items header-right" onClick={()=>this.scrollToDiv('contact')}>Contact</div>
           <div className="header-items header-right" onClick={()=>this.scrollToDiv('djuejio')}>DJ Uejio</div>
           <div className="header-items header-right" onClick={()=>this.scrollToDiv('jazz')}>Jazz</div>
-          <div className="header-items header-right" onClick={()=>this.scrollToDiv('contact')}>Contact</div>
+          <div className="header-items header-right" onClick={()=>this.scrollToDiv('intro')}>Intro</div>
         </Header>
         <div className="header-padding" />
         <div>
@@ -48,7 +48,7 @@ const RightBody = React.createClass({
     const elem = ReactDOM.findDOMNode(this.refs[ref]);
     if (elem) {
       elem.scrollIntoView({block: "start", behavior: "smooth"});
-      document.getElementsByClassName("left")[0].scrollTop -= 48;
+      document.getElementsByClassName("right")[0].scrollTop -= 48;
     }
   }
 });
