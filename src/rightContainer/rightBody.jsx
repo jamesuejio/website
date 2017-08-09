@@ -4,6 +4,7 @@ import './rightBody.css';
 import '../App.css';
 import Header from '../header';
 import Jazz from './jazz';
+import DjUejio from './djuejio';
 
 const RightBody = React.createClass({
   render() {
@@ -39,7 +40,17 @@ const RightBody = React.createClass({
           <div className="header-topic" ref="jazz">Jazz</div>
           <Jazz />
           <div className="header-topic" ref="djuejio">DJ Uejio</div>
+          <DjUejio />
           <div className="header-topic" ref="contact">Contact</div>
+          <p className="intro-paragraph">
+            James Uejio
+          </p>
+          <p className="intro-paragraph">
+            Jazz Guitarist, Musician, Producer, Performer
+          </p>
+          <p className="intro-paragraph">
+            jamesuejio@berkeley.edu
+          </p>
         </div>
       </div>
     );
