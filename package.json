@@ -2,7 +2,7 @@
   "name": "james-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jalagar.github.io/jalagar.github.io",
+  "homepage": "https://jalagar.github.io/website",
   "dependencies": {
     "jquery": "^3.2.1",
     "react": "^15.6.1",
