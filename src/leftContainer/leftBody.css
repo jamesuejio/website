@@ -6,6 +6,7 @@
   overflow: auto;
   position: fixed;
 }
+
 .all-projects {
   display: flex;
   align-items: center;
@@ -21,9 +22,6 @@
 }
 
 .project-tile {
-  /*width: 200px;
-  height: 200px;*/
-  /*position:*/
   position: relative;
 }
 .project-text {

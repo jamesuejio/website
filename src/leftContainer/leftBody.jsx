@@ -14,7 +14,7 @@ const LeftBody = React.createClass({
           <div className="header-items header-left" onClick={()=>this.scrollToDiv('intro')}>Intro</div>
           <div className="header-items header-left" onClick={()=>this.scrollToDiv('projects')}>Projects</div>
           <div className="header-items header-left" onClick={()=>this.scrollToDiv('TA')}>TA</div>
-          <div className="header-items header-left">Resume</div>
+          <div className="header-items header-left" onClick={()=>window.open('/resume.pdf')}>Resume</div>
           <div className="header-items header-left" onClick={()=>this.scrollToDiv('contact')}>Contact</div>
         </Header>
         <div className="header-padding" />

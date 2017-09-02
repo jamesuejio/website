@@ -2,12 +2,6 @@ import React from 'react';
 import './djuejio.css';
 
 const DjUejio = React.createClass({
-  componentDidMount() {
-    var iframe = document.getElementById('spotify');
-    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-    console.log(innerDoc.documentElement.children);
-    // debugger
-  },
   render() {
     return (
       <div>
@@ -22,9 +16,6 @@ const DjUejio = React.createClass({
       </div>
     )
   },
-  // addOnClicks() {
-  //   debugger;
-  // },
 });
 
 export default DjUejio;
