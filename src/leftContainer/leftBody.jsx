@@ -39,7 +39,7 @@ const LeftBody = React.createClass({
           <p className="intro-paragraph">All code located on <a href="https://github.com/jalagar">Github repo</a></p>
           <div className="all-projects">
             <ProjectTile
-              image='/website.jpg'
+              image='/website.png'
               link='https://github.com/jalagar/website'
               header='This website!'
               description='This is my website :)'
