@@ -84,28 +84,30 @@ const LeftBody = React.createClass({
             has tons of walkthrough videos. TAs and I spent many hours making the videos, so hope they help!
           </p>
           <div className="header-topic" ref="contact">Contact</div>
-          <p className="intro-paragraph">
-            James Uejio
-          </p>
-          <p className="intro-paragraph">
-            Software Engineer, Full Stack Developer, Teacher
-          </p>
-          <p className="intro-paragraph">
-            jamesuejio@berkeley.edu
-          </p>
+          <div className="contact-container">
+            <p className="contact-paragraph">
+              James Uejio
+            </p>
+            <p className="contact-paragraph">
+              Software Engineer, Full Stack Developer, Teacher
+            </p>
+            <p className="contact-paragraph">
+              jamesuejio@berkeley.edu
+            </p>
+          </div>
           <a
             className="intro-paragraph"
             href="https://www.linkedin.com/in/james-uejio-479383a1"
             target="_blank" rel="noopener noreferrer"
           >
-            <img src="/linkedin.png" alt='' />
+            <img src="/linkedin.png" height='40px' alt='' />
           </a>
           <a
             className="intro-paragraph"
             href="https://github.com/jalagar"
             target="_blank" rel="noopener noreferrer"
           >
-            <img src="/github.png" alt='' />
+            <img src="/github.png" height='40px' alt='' />
           </a>
 
         </div>
@@ -115,8 +117,8 @@ const LeftBody = React.createClass({
   scrollToDiv(ref){
     const elem = ReactDOM.findDOMNode(this.refs[ref]);
     if (elem) {
-      elem.scrollIntoView({block: "start", behavior: "smooth"});
-      document.getElementsByClassName("left")[0].scrollTop -= 48;
+      elem.scrollIntoView({block: "start", inline: "nearest"});
+      document.getElementsByClassName("left")[0].scrollTop -= 40;
     }
   }
 });

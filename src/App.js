@@ -12,13 +12,16 @@ const App = React.createClass({
     }
   },
   render() {
-    const headerJames = "Hi I'm James Uejio";
     return (
       <div>
         <div className="App">
           <CircleSlider moveLeft={this.moveLeft} moveRight={this.moveRight} />
           <div className="flexicution">
-            <div className="header-james">{headerJames}</div>
+            <div className="header-james">
+              <div>
+                {"Hi! I'm James Uejio"}
+              </div>
+            </div>
             <LeftBody width={this.state.leftWidth} />
             <RightBody width={this.state.rightWidth}/>
           </div>

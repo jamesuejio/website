@@ -31,6 +31,7 @@
   width: 500px;
   margin: 0 auto;
   padding: 10px;
+  line-height: 20px;
 }
 
 @media (max-width: 1050px) {
@@ -52,6 +53,27 @@
   border-color: #fff;
   cursor: move;
   z-index: 20;
+}
+
+.circle-inner {
+  font-size: 20px;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-paragraph {
+  font-size: 14px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.contact-container {
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .flexicution {
@@ -103,6 +125,14 @@
   float: left;
 }
 
+.header-left:hover {
+  color: #D3D3D3;
+}
+
 .header-right {
   float: right;
+}
+
+.header-right:hover {
+  color: rgb(0, 137, 229);
 }

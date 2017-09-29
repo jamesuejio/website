@@ -42,15 +42,17 @@ const RightBody = React.createClass({
           <div className="header-topic" ref="djuejio">DJ Uejio</div>
           <DjUejio />
           <div className="header-topic" ref="contact">Contact</div>
-          <p className="intro-paragraph">
-            James Uejio
-          </p>
-          <p className="intro-paragraph">
-            Jazz Guitarist, Musician, Producer, Performer
-          </p>
-          <p className="intro-paragraph">
-            jamesuejio@berkeley.edu
-          </p>
+          <div className="contact-container">
+            <p className="contact-paragraph">
+              James Uejio
+            </p>
+            <p className="contact-paragraph">
+              Jazz Guitarist, Musician, Producer, Performer
+            </p>
+            <p className="contact-paragraph">
+              jamesuejio@berkeley.edu
+            </p>
+          </div>
         </div>
       </div>
     );
@@ -58,8 +60,8 @@ const RightBody = React.createClass({
   scrollToDiv(ref){
     const elem = ReactDOM.findDOMNode(this.refs[ref]);
     if (elem) {
-      elem.scrollIntoView({block: "start", behavior: "smooth"});
-      document.getElementsByClassName("right")[0].scrollTop -= 48;
+      elem.scrollIntoView({block: "start", inline: "nearest"});
+      document.getElementsByClassName("right")[0].scrollTop -= 40;
     }
   }
 });

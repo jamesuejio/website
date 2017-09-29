@@ -6,7 +6,7 @@ const CircleSlider = React.createClass({
     window.onload = this.addListeners;
 
     return (
-      <div className="circle-slider" id="slider"></div>
+      <div className="circle-slider" id="slider"><div className="circle-inner">&#10234;</div></div>
     );
   },
   addListeners() {
