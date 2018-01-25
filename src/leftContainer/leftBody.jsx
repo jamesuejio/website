@@ -79,7 +79,8 @@ const LeftBody = React.createClass({
             />
           </div>
           <div className="header-topic" ref="TA">TA</div>
-          <p className="intro-paragraph">Click on a specific discussion/lab for a brief summary and notes! Also check out
+          <p className="intro-paragraph">If you want to book an appointment, <a href="https://calendar.google.com/calendar/selfsched?sstoken=UU9XSzI2bDg0dE50fGRlZmF1bHR8ZjQ4NmQ4ZWZhY2Y5NzU0YjBhZWZhNTAxYzliMDJjMDI" >
+           click here!</a> Also check out
             the <a href="https://www.youtube.com/channel/UCuteugW6eO65Awk83I6ehoA/featured">CS 61A Youtube channel</a> which
             has tons of walkthrough videos. TAs and I spent many hours making the videos, so hope they help!
           </p>
