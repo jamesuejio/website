@@ -10,6 +10,7 @@ const ProjectTile = React.createClass({
           className="project-tile"
           href={link}
           target="_blank"
+          rel="noopener noreferrer"
         >
           <div className="project-text">
             <div className="project-header">{header}</div>
