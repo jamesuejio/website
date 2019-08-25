@@ -4,7 +4,6 @@ import './rightBody.css';
 import '../App.css';
 import Header from '../header';
 import Jazz from './jazz';
-import DjUejio from './djuejio';
 
 const RightBody = React.createClass({
   render() {
@@ -13,7 +12,6 @@ const RightBody = React.createClass({
       <div className="right" style={{width: width}}>
         <Header color={"#fff"} width={width}>
           <div className="header-items header-right" onClick={()=>this.scrollToDiv('contact')}>Contact</div>
-          <div className="header-items header-right" onClick={()=>this.scrollToDiv('djuejio')}>DJ Uejio</div>
           <div className="header-items header-right" onClick={()=>this.scrollToDiv('jazz')}>Jazz</div>
           <div className="header-items header-right" onClick={()=>this.scrollToDiv('intro')}>Intro</div>
         </Header>
@@ -39,8 +37,6 @@ const RightBody = React.createClass({
           </p>
           <div className="header-topic" ref="jazz">Jazz</div>
           <Jazz />
-          <div className="header-topic" ref="djuejio">DJ Uejio</div>
-          <DjUejio />
           <div className="header-topic" ref="contact">Contact</div>
           <div className="contact-container">
             <p className="contact-paragraph">
