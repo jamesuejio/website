@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "eslint": "^4.2.0",
-    "gh-pages": "^1.0.0"
+    "gh-pages": "^1.2.0"
   }
 }
