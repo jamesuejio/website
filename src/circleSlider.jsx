@@ -1,42 +1,52 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-const CircleSlider = React.createClass({
-  render() {
-    window.onload = this.addListeners;
+const CircleSlider = ({ moveLeft, moveRight }) => {
+  const addListeners = () => {
+    document
+      .getElementById("slider")
+      .addEventListener("mousedown", mouseDown, false);
+    document
+      .getElementById("slider")
+      .addEventListener("touchstart", mouseDown, false);
+    window.addEventListener("mouseup", mouseUp, false);
+    window.addEventListener("touchend", mouseUp, false);
+  };
 
-    return (
-      <div className="circle-slider" id="slider"><div className="circle-inner">&#10234;</div></div>
-    );
-  },
-  addListeners() {
-    document.getElementById('slider').addEventListener('mousedown', this.mouseDown, false);
-    window.addEventListener('mouseup', this.mouseUp, false);
-  },
-  divMove(e) {
-    var div = document.getElementById('slider');
-    div.style.left = e.clientX - 23 + 'px';
-    if (e.clientX > (window.innerWidth / 2)) {
-      document.getElementsByClassName('left')[0].style.zIndex = 2;
-      document.getElementsByClassName('right')[0].style.zIndex = 1;
-      this.props.moveLeft(e.clientX + 'px');
+  const divMove = e => {
+    var div = document.getElementById("slider");
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    div.style.left = clientX - 23 + "px";
+    if (clientX > window.innerWidth / 2) {
+      document.getElementsByClassName("left")[0].style.zIndex = 2;
+      document.getElementsByClassName("right")[0].style.zIndex = 1;
+      moveLeft(clientX + "px");
     } else {
-      document.getElementsByClassName('right')[0].style.zIndex = 2;
-      document.getElementsByClassName('left')[0].style.zIndex = 1;
-      this.props.moveRight((window.innerWidth - e.clientX) + 'px');
+      document.getElementsByClassName("right")[0].style.zIndex = 2;
+      document.getElementsByClassName("left")[0].style.zIndex = 1;
+      moveRight(window.innerWidth - clientX + "px");
     }
-  },
-  mouseUp() {
-    const appDown = document.getElementsByClassName('Appdown')[0];
+  };
+  const mouseUp = () => {
+    const appDown = document.getElementsByClassName("Appdown")[0];
     if (appDown !== undefined) {
       appDown.className = "App";
     }
-    window.removeEventListener('mousemove', this.divMove, true);
-  },
-  mouseDown(e){
-    document.getElementsByClassName('App')[0].className = "Appdown";
-    window.addEventListener('mousemove', this.divMove, true);
-  },
-});
+    window.removeEventListener("mousemove", divMove, true);
+    window.removeEventListener("touchmove", divMove, true);
+  };
+  const mouseDown = () => {
+    document.getElementsByClassName("App")[0].className = "Appdown";
+    window.addEventListener("mousemove", divMove, true);
+    window.addEventListener("touchmove", divMove, true);
+  };
+  window.onload = addListeners;
+
+  return (
+    <div className="circle-slider" id="slider">
+      <div className="circle-inner">&#10234;</div>
+    </div>
+  );
+};
 
 export default CircleSlider;

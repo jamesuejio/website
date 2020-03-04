@@ -5,10 +5,10 @@
   "homepage": "https://jalagar.github.io",
   "dependencies": {
     "jquery": "^3.2.1",
-    "react": "^15.6.1",
+    "react": "^16.8.1",
     "react-bootstrap": "^0.31.0",
-    "react-dom": "^15.6.1",
-    "react-scripts": "^3.1.1"
+    "react-dom": "^16.8.1",
+    "react-scripts": "^3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
