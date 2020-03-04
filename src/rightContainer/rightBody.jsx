@@ -16,6 +16,7 @@ const RightBody = ({ width }) => {
   const contactRef = useRef(null);
   const jazzRef = useRef(null);
   const introRef = useRef(null);
+  const lofiRef = useRef(null);
   return (
     <div className="right" style={{ width: width }}>
       <Header color={"#fff"} width={width}>
@@ -33,6 +34,12 @@ const RightBody = ({ width }) => {
         </div>
         <div
           className="header-items header-right"
+          onClick={() => scrollToRef(lofiRef)}
+        >
+          Lofi Hip Hop
+        </div>
+        <div
+          className="header-items header-right"
           onClick={() => scrollToRef(introRef)}
         >
           Intro
@@ -41,7 +48,7 @@ const RightBody = ({ width }) => {
       <div className="header-padding" />
       <div>
         <div className="header-align" ref={introRef}>
-          ... and I am a musician.
+          I am a musician.
         </div>
         <img
           id="music"
@@ -61,10 +68,22 @@ const RightBody = ({ width }) => {
           I decided to further my music education and attended the University of
           Berkeley as a Music minor. I joined UC Jazz played in jazz combos for
           all four years. I performed in cafes, restaurants, on campus, and
-          hotels. Check out{" "}
-          <span onClick={() => scrollToRef(jazzRef)}>Jazz </span>
-          for some jazz recordings. Post-grad, I am recording a fusion EP.
+          hotels. Post-grad, I produce lofi hip hop beats and am working on a
+          fusion EP.
         </p>
+        <div className="header-topic" ref={lofiRef}>
+          Lofi Hip Hop
+        </div>
+        <div className="header">Here's my SoundCloud hope you enjoy!</div>
+        <iframe
+          title="soundCloud"
+          width={parseInt(width, 10) > 500 ? "500px" : "100%"}
+          height="300"
+          scrolling="no"
+          frameBorder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/724465447&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        ></iframe>
         <div className="header-topic" ref={jazzRef}>
           Jazz
         </div>

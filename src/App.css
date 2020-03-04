@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
 .App {
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .Appdown {
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -17,13 +17,13 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0px;  /* remove scrollbar space */
+  width: 0px; /* remove scrollbar space */
   height: 0px;
-  background: transparent;  /* optional: just make scrollbar invisible */
+  background: transparent; /* optional: just make scrollbar invisible */
 }
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-  background: #FF0000;
+  background: #ff0000;
 }
 
 .intro-paragraph {
@@ -36,7 +36,7 @@
 
 @media (max-width: 1050px) {
   .intro-paragraph {
-    width: calc(50vw - 50px);
+    width: calc(50vw - 20px);
     margin: none;
   }
 }
@@ -67,8 +67,10 @@
 
 .contact-paragraph {
   font-size: 14px;
-  width: 500px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-container {
@@ -81,16 +83,25 @@
 }
 
 .header-james {
-  width: 20%;
   position: fixed;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   padding-top: 10px;
-  font-size: 18px;
-  color: #000;
+  font-size: 20px;
   z-index: 100;
   font-weight: bold;
+  left: calc(50% - 62.5px);
+  display: flex;
+  align-items: center;
+}
+
+.header-first-name {
+  color: #fff;
+  background-color: #005b96;
+}
+
+.header-last-name {
+  color: #005b96;
+  background-color: #fff;
 }
 
 .header-align {
@@ -126,7 +137,7 @@
 }
 
 .header-left:hover {
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 
 .header-right {

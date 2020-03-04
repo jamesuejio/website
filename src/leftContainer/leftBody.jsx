@@ -7,7 +7,7 @@ import ProjectTile from "./ProjectTile";
 const LeftBody = ({ width }) => {
   const introRef = useRef(null);
   const projectRef = useRef(null);
-  const taRef = useRef(null);
+  const teacherRef = useRef(null);
   const contactRef = useRef(null);
   const scrollToRef = ref => {
     const elem = ref.current;
@@ -33,9 +33,9 @@ const LeftBody = ({ width }) => {
         </div>
         <div
           className="header-items header-left"
-          onClick={() => scrollToRef(taRef)}
+          onClick={() => scrollToRef(teacherRef)}
         >
-          TA
+          Teacher
         </div>
         <div
           className="header-items header-left"
@@ -53,7 +53,7 @@ const LeftBody = ({ width }) => {
       <div className="header-padding" />
       <div className="left-body">
         <div className="header-align" ref={introRef}>
-          ... and I am a computer scientist.
+          I am a computer scientist.
         </div>
         <img src="/headpict.jpg" width="200px" height="200px" alt=""></img>
         <p className="intro-paragraph">
@@ -105,13 +105,15 @@ const LeftBody = ({ width }) => {
         <p className="intro-paragraph">
           This past year, I have been working full time as a Full Stack Web
           Developer at{" "}
-          <a target="_blank" rel="noopener noreferrer" href="http://wish.com">
+          <a target="_blank" rel="noopener noreferrer" href="https://wish.com">
             Wish
           </a>
-          . I owned the post purchase experience and rebuilt the customer
-          support chat bot. I worked on countless experiments to improve key
-          business metrics. I also mentored multiple interns and attended
-          leadership workshops.
+          . I work mainly on post purchase features, and my biggest project has
+          been rewriting and leading the Customer Support Chatbot (Wish
+          Assistant). It has decreased tickets by 50%, increased CSAT by 20%,
+          and increased many other high level metrics. I manage all Wish
+          Assistant features, releases, code, and mentor two interns who
+          actively work it.
         </p>
         <div className="header-topic" ref={projectRef}>
           Projects
@@ -161,20 +163,40 @@ const LeftBody = ({ width }) => {
             technologies="HTML, CSS, JS, Google Maps API"
           />
         </div>
-        <div className="header-topic" ref={taRef}>
-          TA
+        <div className="header-topic" ref={teacherRef}>
+          Teacher
         </div>
         <p className="intro-paragraph">
-          If you want to book an appointment,{" "}
-          <a href="https://calendar.google.com/calendar/selfsched?sstoken=UU9XSzI2bDg0dE50fGRlZmF1bHR8ZjQ4NmQ4ZWZhY2Y5NzU0YjBhZWZhNTAxYzliMDJjMDI">
-            click here!
-          </a>{" "}
-          Also check out the{" "}
-          <a href="https://www.youtube.com/channel/UCuteugW6eO65Awk83I6ehoA/featured">
-            CS 61A Youtube channel
-          </a>{" "}
-          which has tons of walkthrough videos. TAs and I spent many hours
-          making the videos, so hope they help!
+          I really enjoy teaching and creating video walkthroughs. I believe
+          videos are a perfect balance between visual learning and audio
+          learning, and have a much wider breadth than other mediums. At my
+          current job, I have mentored multiple interns and have created
+          onboarding videos and documentation to help new hires.
+        </p>
+        <p className="intro-paragraph">
+          I am also a video instructor for one of the world's largest Python
+          resource websites, <a href="https://realpython.com/">RealPython</a>. I
+          record and create multiple hours of content with thousands of views.
+          You can see my video on sets{" "}
+          <a href="https://realpython.com/courses/sets-python/">here</a> and my
+          video on recursion{" "}
+          <a href="https://realpython.com/courses/thinking-recursively-python/">
+            here
+          </a>
+          .
+        </p>
+        <p className="intro-paragraph">
+          I also was the summer instructor for the nation's largest computer
+          science course, CS 61A, and was the head TA for three semesters. You
+          can find the summer content at the{" "}
+          <a href="https://inst.eecs.berkeley.edu/~cs61a/su18/">
+            Summer 2018 CS 61A
+          </a>
+          website and some of my exam walkthrough videos{" "}
+          <a href="https://www.youtube.com/channel/UCNZABnj6W_e274QqFoRBy1Q?view_as=subscriber">
+            here
+          </a>
+          .
         </p>
         <div className="header-topic" ref={contactRef}>
           Contact
@@ -182,7 +204,7 @@ const LeftBody = ({ width }) => {
         <div className="contact-container">
           <p className="contact-paragraph">James Uejio</p>
           <p className="contact-paragraph">
-            Full Stack Developer, Leader, Teacher
+            Full Stack Developer, Pythonista, Leader, Teacher
           </p>
           <p className="contact-paragraph">jamesuejio@berkeley.edu</p>
         </div>

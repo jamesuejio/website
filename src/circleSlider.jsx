@@ -14,9 +14,11 @@ const CircleSlider = ({ moveLeft, moveRight }) => {
   };
 
   const divMove = e => {
-    var div = document.getElementById("slider");
+    const sliderDiv = document.getElementById("slider");
+    const titleDiv = document.getElementById("james");
     const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-    div.style.left = clientX - 23 + "px";
+    sliderDiv.style.left = clientX - 23 + "px";
+    titleDiv.style.left = clientX - 62 + "px";
     if (clientX > window.innerWidth / 2) {
       document.getElementsByClassName("left")[0].style.zIndex = 2;
       document.getElementsByClassName("right")[0].style.zIndex = 1;

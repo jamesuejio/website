@@ -13,8 +13,8 @@ const Jazz = () => (
       />
       <div className="jazz-description">
         <div className="header">
-          Nathan Le and I have been playing music together for about a semester.
-          Here are some recordings!
+          Here are some recordings from college where I played duo guitar gigs
+          with Nathan Le!
         </div>
         <div className="audio-title">All The Things You Are</div>
         <audio controls>
