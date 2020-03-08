@@ -120,12 +120,18 @@ const LeftBody = ({ width }) => {
         </div>
         <p className="intro-paragraph">
           All code located on{" "}
-          <a href="https://github.com/jalagar">Github repo</a>
+          <a href="https://github.com/jamesuejio">Github repo</a>
         </p>
         <div className="all-projects">
           <ProjectTile
+            image="/raspberry.jpg"
+            header="BarPoppin'"
+            description="BarPoppin' tracks and advertises how many people are in your bar."
+            technologies="Raspberry Pi, Python, Heroku"
+          />
+          <ProjectTile
             image="/website.png"
-            link="https://github.com/jalagar/website"
+            link="https://github.com/jamesuejio/website"
             header="This website!"
             description="This is my website :). Built entirely from scratch using no 3rd party libraries."
             technologies="HTML, CSS, ReactJS"
@@ -156,7 +162,6 @@ const LeftBody = ({ width }) => {
           />
           <ProjectTile
             image="/soundfyre.png"
-            link="http://soundfyre.net/"
             header="SoundFyre"
             description="Hackathon project to help underground musicians find other musicians to collaborate with and find
             a local fan base. Can upload audio and a marker will drop on their geolocation."
@@ -218,7 +223,7 @@ const LeftBody = ({ width }) => {
         </a>
         <a
           className="intro-paragraph"
-          href="https://github.com/jalagar"
+          href="https://github.com/jamesuejio"
           target="_blank"
           rel="noopener noreferrer"
         >
